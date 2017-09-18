@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		843611791F703B1400ABE817 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843611781F703B1400ABE817 /* main.m */; };
 		8436117C1F703B1400ABE817 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436117B1F703B1400ABE817 /* AppDelegate.m */; };
-		8436117F1F703B1400ABE817 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436117E1F703B1400ABE817 /* ViewController.m */; };
 		843611821F703B1400ABE817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843611801F703B1400ABE817 /* Main.storyboard */; };
 		843611841F703B1400ABE817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843611831F703B1400ABE817 /* Assets.xcassets */; };
 		843611871F703B1400ABE817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843611851F703B1400ABE817 /* LaunchScreen.storyboard */; };
 		843611921F703B1400ABE817 /* mapLocTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843611911F703B1400ABE817 /* mapLocTests.m */; };
 		8436119D1F703B1400ABE817 /* mapLocUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436119C1F703B1400ABE817 /* mapLocUITests.m */; };
+		843611AC1F703B3C00ABE817 /* cblpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843611AB1F703B3C00ABE817 /* cblpViewController.m */; };
+		843611AF1F703DAD00ABE817 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843611AE1F703DAD00ABE817 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		843611781F703B1400ABE817 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8436117A1F703B1400ABE817 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8436117B1F703B1400ABE817 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8436117D1F703B1400ABE817 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8436117E1F703B1400ABE817 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		843611811F703B1400ABE817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		843611831F703B1400ABE817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843611861F703B1400ABE817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		843611981F703B1400ABE817 /* mapLocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapLocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8436119C1F703B1400ABE817 /* mapLocUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapLocUITests.m; sourceTree = "<group>"; };
 		8436119E1F703B1400ABE817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843611AA1F703B3C00ABE817 /* cblpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cblpViewController.h; sourceTree = "<group>"; };
+		843611AB1F703B3C00ABE817 /* cblpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cblpViewController.m; sourceTree = "<group>"; };
+		843611AE1F703DAD00ABE817 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843611AF1F703DAD00ABE817 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				843611901F703B1400ABE817 /* mapLocTests */,
 				8436119B1F703B1400ABE817 /* mapLocUITests */,
 				843611751F703B1400ABE817 /* Products */,
+				843611AD1F703DAD00ABE817 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +107,8 @@
 			children = (
 				8436117A1F703B1400ABE817 /* AppDelegate.h */,
 				8436117B1F703B1400ABE817 /* AppDelegate.m */,
-				8436117D1F703B1400ABE817 /* ViewController.h */,
-				8436117E1F703B1400ABE817 /* ViewController.m */,
+				843611AA1F703B3C00ABE817 /* cblpViewController.h */,
+				843611AB1F703B3C00ABE817 /* cblpViewController.m */,
 				843611801F703B1400ABE817 /* Main.storyboard */,
 				843611831F703B1400ABE817 /* Assets.xcassets */,
 				843611851F703B1400ABE817 /* LaunchScreen.storyboard */,
@@ -138,6 +142,14 @@
 				8436119E1F703B1400ABE817 /* Info.plist */,
 			);
 			path = mapLocUITests;
+			sourceTree = "<group>";
+		};
+		843611AD1F703DAD00ABE817 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				843611AE1F703DAD00ABE817 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +220,11 @@
 					843611731F703B1400ABE817 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8436118C1F703B1400ABE817 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -273,8 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8436117F1F703B1400ABE817 /* ViewController.m in Sources */,
 				8436117C1F703B1400ABE817 /* AppDelegate.m in Sources */,
+				843611AC1F703B3C00ABE817 /* cblpViewController.m in Sources */,
 				843611791F703B1400ABE817 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
