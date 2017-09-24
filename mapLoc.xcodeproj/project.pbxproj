@@ -16,6 +16,7 @@
 		8436119D1F703B1400ABE817 /* mapLocUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436119C1F703B1400ABE817 /* mapLocUITests.m */; };
 		843611AC1F703B3C00ABE817 /* cblpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843611AB1F703B3C00ABE817 /* cblpViewController.m */; };
 		843611AF1F703DAD00ABE817 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843611AE1F703DAD00ABE817 /* MapKit.framework */; };
+		84465ACB1F778F510019C80A /* cblpMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84465ACA1F778F510019C80A /* cblpMapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		843611AA1F703B3C00ABE817 /* cblpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cblpViewController.h; sourceTree = "<group>"; };
 		843611AB1F703B3C00ABE817 /* cblpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cblpViewController.m; sourceTree = "<group>"; };
 		843611AE1F703DAD00ABE817 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84465AC91F778F510019C80A /* cblpMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cblpMapAnnotation.h; sourceTree = "<group>"; };
+		84465ACA1F778F510019C80A /* cblpMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cblpMapAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				8436117B1F703B1400ABE817 /* AppDelegate.m */,
 				843611AA1F703B3C00ABE817 /* cblpViewController.h */,
 				843611AB1F703B3C00ABE817 /* cblpViewController.m */,
+				84465AC91F778F510019C80A /* cblpMapAnnotation.h */,
+				84465ACA1F778F510019C80A /* cblpMapAnnotation.m */,
 				843611801F703B1400ABE817 /* Main.storyboard */,
 				843611831F703B1400ABE817 /* Assets.xcassets */,
 				843611851F703B1400ABE817 /* LaunchScreen.storyboard */,
@@ -290,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84465ACB1F778F510019C80A /* cblpMapAnnotation.m in Sources */,
 				8436117C1F703B1400ABE817 /* AppDelegate.m in Sources */,
 				843611AC1F703B3C00ABE817 /* cblpViewController.m in Sources */,
 				843611791F703B1400ABE817 /* main.m in Sources */,
@@ -522,6 +528,7 @@
 				843611A31F703B1400ABE817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		843611A41F703B1400ABE817 /* Build configuration list for PBXNativeTarget "mapLocTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +537,7 @@
 				843611A61F703B1400ABE817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		843611A71F703B1400ABE817 /* Build configuration list for PBXNativeTarget "mapLocUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +546,7 @@
 				843611A91F703B1400ABE817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

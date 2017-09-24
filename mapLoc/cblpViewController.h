@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "cblpMapAnnotation.h"
 
-
-@interface cblpViewController : UIViewController
+@interface cblpViewController : UIViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic) IBOutlet MKMapView *cblpMap;
 
